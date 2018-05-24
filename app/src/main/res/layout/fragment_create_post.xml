@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.CreatePostFragment"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="13">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date :"
+            android:layout_weight="2"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textAlignment="textStart"/>
+
+        <DatePicker
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/post_date"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner">
+
+        </DatePicker>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title :"
+            android:layout_weight="2"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textAlignment="textStart"/>
+
+        <EditText
+            android:id="@+id/post_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Message :"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAlignment="textStart"/>
+
+        <EditText
+            android:id="@+id/post_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post"
+            android:id="@+id/post_submit"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/textPrimary"
+            android:textSize="18sp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
